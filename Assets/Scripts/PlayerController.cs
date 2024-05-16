@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask interactableLayer;
 
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -36,12 +37,17 @@ public class PlayerController : MonoBehaviour
                 targetPos.x += input.x;
                 targetPos.y += input.y;
 
+
                 if (IsWalkable(targetPos))
                     StartCoroutine(Move(targetPos));
+
+
             }
         }
 
         animator.SetBool("isMoving", isMoving);
+
+
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -64,5 +70,4 @@ public class PlayerController : MonoBehaviour
         }
         return true;
     }
-
 }
