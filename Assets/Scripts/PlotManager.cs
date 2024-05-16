@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class plotManager : MonoBehaviour
 {
+    public CollectableType type;
     bool isPlanted = false;
     SpriteRenderer plant;
     BoxCollider2D plantCollider;
     int plantStage = 0;
     float timer;
     //create collectable
-
     public Player player;
-
-
     public PlantObject selectedPlant;
+
+    public Collectable collectableInstance;
 
 
     void Start()
@@ -57,7 +57,7 @@ public class plotManager : MonoBehaviour
         isPlanted = false;
         plant.gameObject.SetActive(false);
         //update inventory
-        player.numTrigo++;
+        player.inventory.Add(collectableInstance);
     }
     void Plant()
     {

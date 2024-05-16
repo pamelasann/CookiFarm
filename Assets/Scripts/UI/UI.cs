@@ -9,6 +9,13 @@ public class NewBehaviourScript : MonoBehaviour
     public Player player;
 
     public List<Slots> slots = new List<Slots>();
+
+
+    void Start()
+    {
+        inventoryPanel.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +30,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (!inventoryPanel.activeSelf)
         {
             inventoryPanel.SetActive(true);
-            //SetUp();
+            Refresh();
         }
         else
         {
@@ -31,8 +38,8 @@ public class NewBehaviourScript : MonoBehaviour
         }
     }
 
-    /*
-    void SetUp()
+
+    void Refresh()
     {
         if (slots.Count == player.inventory.slots.Count)
         {
@@ -40,10 +47,14 @@ public class NewBehaviourScript : MonoBehaviour
             {
                 if (player.inventory.slots[i].type != CollectableType.NONE)
                 {
-
+                    slots[i].SetItem(player.inventory.slots[i]);
+                }
+                else
+                {
+                    slots[i].SetEmpty();
                 }
             }
         }
     }
-    */
+
 }
