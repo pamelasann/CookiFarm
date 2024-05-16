@@ -22,5 +22,5 @@ public class Collectable : MonoBehaviour
 
 public enum CollectableType
 {
-    NONE, TRIGO_DONE
+    NONE, TRIGO_DONE, FRESA_DONE, LECHE_NUMS
 }

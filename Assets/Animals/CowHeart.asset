@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9c0ea70862a416885bccdb12191452, type: 3}
+  m_Name: CowHeart
+  m_EditorClassIdentifier: 
+  animalName: 
+  animalStages:
+  - {fileID: 241887054, guid: 1c54c5705ba183145b533bab58a302d9, type: 3}
+  - {fileID: -2035365108, guid: 1c54c5705ba183145b533bab58a302d9, type: 3}
+  - {fileID: -1356054695, guid: 1c54c5705ba183145b533bab58a302d9, type: 3}
+  - {fileID: 1902121817, guid: 1c54c5705ba183145b533bab58a302d9, type: 3}
+  - {fileID: -1698008436, guid: 1c54c5705ba183145b533bab58a302d9, type: 3}
+  - {fileID: -1717374589, guid: 1c54c5705ba183145b533bab58a302d9, type: 3}
+  - {fileID: -678053737, guid: 1c54c5705ba183145b533bab58a302d9, type: 3}
+  timeBTWStages: 0.5
