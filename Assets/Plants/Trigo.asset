@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantName: Trigo
   plantStages:
+  - {fileID: 1179904100, guid: 19fea222dc9d21f4194abce8b5f981bf, type: 3}
   - {fileID: -207405603, guid: 19fea222dc9d21f4194abce8b5f981bf, type: 3}
   - {fileID: -794848023, guid: 19fea222dc9d21f4194abce8b5f981bf, type: 3}
   - {fileID: -827471707, guid: 19fea222dc9d21f4194abce8b5f981bf, type: 3}
