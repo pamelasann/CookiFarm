@@ -12,7 +12,12 @@ public class PlayerController : MonoBehaviour
     public LayerMask solidObjectsLayer;
 
     public LayerMask interactableLayer;
+    public VectorValue startingPosition;
 
+    void Start()
+    {
+        transform.position = startingPosition.initialValue;
+    }
 
     private void Awake()
     {
