@@ -341,7 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 984839595}
 --- !u!60 &7427177
@@ -523,7 +522,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 236439726}
 --- !u!60 &22476564
@@ -1079,7 +1077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
-  player: {fileID: 0}
   selectedAnimal: {fileID: 11400000, guid: e3a5c465bae3e47d1a46a60a59143b37, type: 2}
   collectableInstance: {fileID: 1578457938}
 --- !u!1 &94904896
@@ -1798,7 +1795,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08602619, y: 0.021506786}
+  m_Offset: {x: 0.00832653, y: 0.027478665}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1809,7 +1806,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1720524, y: 0.4408239}
+  m_Size: {x: 0.98334694, y: 0.5649944}
   m_EdgeRadius: 0
 --- !u!212 &204335476
 SpriteRenderer:
@@ -3623,7 +3620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 1463956356}
 --- !u!60 &435743965
@@ -3832,7 +3828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 1483690303}
 --- !u!60 &449064830
@@ -6704,7 +6699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 1733748589}
 --- !u!60 &791272558
@@ -6886,7 +6880,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 803355067}
 --- !u!60 &799103275
@@ -7604,7 +7597,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.043013543}
+  m_Offset: {x: 0, y: 0.027437165}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7615,7 +7608,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5698646}
+  m_Size: {x: 1, y: 0.5387118}
   m_EdgeRadius: 0
 --- !u!50 &944728214
 Rigidbody2D:
@@ -8074,7 +8067,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 94904897}
 --- !u!60 &1002042215
@@ -8272,7 +8264,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 1676479660}
 --- !u!60 &1019391808
@@ -8551,7 +8542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 716980604}
 --- !u!60 &1064777123
@@ -9196,7 +9186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 701326496}
 --- !u!60 &1170878901
@@ -9394,7 +9383,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 112356761}
 --- !u!60 &1201694404
@@ -9592,7 +9580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 1334971469}
 --- !u!60 &1242935770
@@ -10057,7 +10044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 510951836}
 --- !u!60 &1321824940
@@ -11714,7 +11700,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 2074460796}
 --- !u!60 &1536277925
@@ -13920,7 +13905,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 1530799752}
 --- !u!60 &1716357700
@@ -14645,7 +14629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 1582632128}
 --- !u!60 &1857543003
@@ -14985,7 +14968,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: fdf2412cc8b9c463db6587daeefad464, type: 2}
   collectableInstance: {fileID: 616915316}
 --- !u!60 &1901800724
@@ -30653,7 +30635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  player: {fileID: 0}
   selectedPlant: {fileID: 11400000, guid: adc8d77635f50469db3581f73040f632, type: 2}
   collectableInstance: {fileID: 695547601}
 --- !u!60 &2090243366
@@ -49783,6 +49764,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1166049241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2129759737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129759739}
+  - component: {fileID: 2129759738}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2129759738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129759737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ec1f2bb0aad4d8d877ffc851186e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+    slots: []
+  uiManager: {fileID: 1585373445}
+--- !u!4 &2129759739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129759737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.524363, y: 0.13404652, z: -0.007454603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137262671
 GameObject:
   m_ObjectHideFlags: 0
@@ -50873,3 +50901,4 @@ SceneRoots:
   - {fileID: 388546181}
   - {fileID: 1757454071}
   - {fileID: 519198329}
+  - {fileID: 2129759739}

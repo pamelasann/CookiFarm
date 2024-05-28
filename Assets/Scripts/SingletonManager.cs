@@ -7,6 +7,7 @@ public class SingletonManager : MonoBehaviour
     public static SingletonManager Instance { get; private set; }
 
     public Inventory inventory;
+    public NewBehaviourScript uiManager;
 
     private void Awake()
     {
@@ -19,6 +20,13 @@ public class SingletonManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+    public void RefreshUI()
+    {
+        if (uiManager != null)
+        {
+            uiManager.Refresh();
         }
     }
 }

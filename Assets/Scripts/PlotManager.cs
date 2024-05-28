@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class plotManager : MonoBehaviour
+public class PlotManager : MonoBehaviour
 {
     public CollectableType type;
     bool isPlanted = false;
@@ -10,8 +10,6 @@ public class plotManager : MonoBehaviour
     BoxCollider2D plantCollider;
     int plantStage = 0;
     float timer;
-    //create collectable
-    public Player player;
     public PlantObject selectedPlant;
 
     public Collectable collectableInstance;
@@ -21,9 +19,6 @@ public class plotManager : MonoBehaviour
     {
         plant = transform.GetChild(0).GetComponent<SpriteRenderer>();
         plantCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
-
-        // Find the Player object in the scene
-        player = GameObject.FindObjectOfType<Player>();
     }
     void Update() // Update is called once per frame
     {
@@ -56,8 +51,7 @@ public class plotManager : MonoBehaviour
     {
         isPlanted = false;
         plant.gameObject.SetActive(false);
-        //update inventory
-        player.inventory.Add(collectableInstance);
+        SingletonManager.Instance.inventory.Add(collectableInstance);
     }
     void Plant()
     {

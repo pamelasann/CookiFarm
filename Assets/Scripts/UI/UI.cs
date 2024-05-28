@@ -10,7 +10,19 @@ public class NewBehaviourScript : MonoBehaviour
 
     public List<Slots> slots = new List<Slots>();
 
-
+    void Awake()
+    {
+        if (SingletonManager.Instance != null)
+        {
+            player = FindObjectOfType<Player>();
+            SingletonManager.Instance.uiManager = this;
+            Refresh(); // ensure UI is refreshed on load
+        }
+        else
+        {
+            Debug.LogError("SibletonManager Instance not found");
+        }
+    }
     void Start()
     {
         inventoryPanel.SetActive(false);
@@ -39,7 +51,7 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
 
-    void Refresh()
+    public void Refresh()
     {
         if (slots.Count == player.inventory.slots.Count)
         {
