@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -8,6 +9,14 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        inventory = new Inventory(20);
+        if (SingletonManager.Instance != null)
+        {
+            inventory = SingletonManager.Instance.inventory;
+        }
+        else
+        {
+            Debug.LogError("SibletonManager Instance not found");
+        }
+
     }
 }

@@ -10,8 +10,6 @@ public class SceneTransition : MonoBehaviour
     public VectorValue playerStorage;
     public void OnTriggerEnter2D(Collider2D other)
     {
-        // Debugging log to see when the collision happens
-        Debug.Log("OnTriggerEnter2D triggered");
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             playerStorage.initialValue = playerPosition;

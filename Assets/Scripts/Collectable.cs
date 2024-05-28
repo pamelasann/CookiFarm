@@ -12,8 +12,9 @@ public class Collectable : MonoBehaviour
         Player player = collision.GetComponent<Player>();
         if (player)
         {
-            player.inventory.Add(this);
-            Destroy(this.gameObject);
+            SingletonManager.Instance.inventory.Add(this);
+            SingletonManager.Instance.RefreshUI();
+            Destroy(gameObject);
         }
 
     }

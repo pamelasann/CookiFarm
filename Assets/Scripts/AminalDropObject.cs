@@ -10,8 +10,6 @@ public class AminalDropObject : MonoBehaviour
     BoxCollider2D animalCollider;
     int animalStage = 0;
     float timer;
-    //create collectable
-    public Player player;
     public AnimalObject selectedAnimal; //plantObject crheck if script
 
     public Collectable collectableInstance;
@@ -21,19 +19,11 @@ public class AminalDropObject : MonoBehaviour
     {
         animalObj = transform.GetChild(0).GetComponent<SpriteRenderer>();
         animalCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
-
-        // Find the Player object in the scene
-        player = GameObject.FindObjectOfType<Player>();
-
-        // Find the Animal object in the scene
-        //selectedAnimal = GameObject.FindObjectOfType<AnimalObject>();
     }
     void Update() // Update is called once per frame
     {
         if (isPlanted)
         {
-
-
             timer = timer - Time.deltaTime;
             if (timer < 0 && animalStage < selectedAnimal.animalStages.Length - 1)
             {
@@ -60,9 +50,8 @@ public class AminalDropObject : MonoBehaviour
     void Harvest()
     {
         isPlanted = false;
-        animalObj.gameObject.SetActive(false); //
-        //update inventory
-        player.inventory.Add(collectableInstance);
+        animalObj.gameObject.SetActive(false);
+        SingletonManager.Instance.inventory.Add(collectableInstance);
     }
     void Plant()
     {
