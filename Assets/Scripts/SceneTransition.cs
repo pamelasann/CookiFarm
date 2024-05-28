@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition : MonoBehaviour{
+public class SceneTransition : MonoBehaviour
+{
     public string sceneToLoad;
-    public void OnTriggerEnter2D(Collider2D other){
+    public Vector2 playerPosition;
+    public VectorValue playerStorage;
+    public void OnTriggerEnter2D(Collider2D other)
+    {
         // Debugging log to see when the collision happens
         Debug.Log("OnTriggerEnter2D triggered");
-        if(other.CompareTag("Player") && !other.isTrigger){
-            // Debugging log to verify condition
-            Debug.Log("Player entered the trigger");
+        if (other.CompareTag("Player") && !other.isTrigger)
+        {
+            playerStorage.initialValue = playerPosition;
             SceneManager.LoadScene(sceneToLoad);
         }
     }

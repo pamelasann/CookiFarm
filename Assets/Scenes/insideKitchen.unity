@@ -839,6 +839,7 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 256
+  startingPosition: {fileID: 11400000, guid: 2ba78e7ffe3ca4e4fb4039d15217c9d0, type: 2}
 --- !u!212 &211867951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -900,7 +901,7 @@ Transform:
   m_GameObject: {fileID: 211867945}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.15, y: 3.35, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14999,6 +15000,18 @@ PrefabInstance:
     - target: {fileID: 4588277885625810558, guid: 2fe29b020210bf24fa2d0d901db12ac5, type: 3}
       propertyPath: m_Name
       value: SceneTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222370253741434480, guid: 2fe29b020210bf24fa2d0d901db12ac5, type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba78e7ffe3ca4e4fb4039d15217c9d0, type: 2}
+    - target: {fileID: 6222370253741434480, guid: 2fe29b020210bf24fa2d0d901db12ac5, type: 3}
+      propertyPath: playerPosition.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222370253741434480, guid: 2fe29b020210bf24fa2d0d901db12ac5, type: 3}
+      propertyPath: playerPosition.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6582554782022799500, guid: 2fe29b020210bf24fa2d0d901db12ac5, type: 3}
       propertyPath: m_LocalPosition.x
