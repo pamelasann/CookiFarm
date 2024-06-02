@@ -5,10 +5,9 @@ using UnityEngine;
 public class SingletonManager : MonoBehaviour
 {
     public static SingletonManager Instance { get; private set; }
-
     public Inventory inventory;
     public NewBehaviourScript uiManager;
-
+    public BakingManager bakingManager; // Add reference to BakingManager
     private void Awake()
     {
         if (Instance == null)

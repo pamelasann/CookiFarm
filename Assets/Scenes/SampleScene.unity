@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819a6563f3ae44028be8699269655a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 3
+  type: 10
   selectedAnimal: {fileID: 11400000, guid: e3a5c465bae3e47d1a46a60a59143b37, type: 2}
   collectableInstance: {fileID: 1578457938}
 --- !u!1 &94904896
@@ -6461,7 +6461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec520d216d4a84b98a1e8da21ec1ce01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 4
+  type: 3
   icon: {fileID: 1147671604, guid: ed7693dfb99ef524eaf3ab8d5fce6681, type: 3}
 --- !u!61 &720310363
 BoxCollider2D:
@@ -12155,7 +12155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec520d216d4a84b98a1e8da21ec1ce01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 3
+  type: 10
   icon: {fileID: -1377869320, guid: ed7693dfb99ef524eaf3ab8d5fce6681, type: 3}
 --- !u!61 &1578457939
 BoxCollider2D:
@@ -14537,7 +14537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819a6563f3ae44028be8699269655a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 4
+  type: 3
   selectedAnimal: {fileID: 11400000, guid: 6f175ba9c814e450fb0c1e052028c1a7, type: 2}
   collectableInstance: {fileID: 720310362}
 --- !u!60 &1782005030
@@ -50122,6 +50122,7 @@ MonoBehaviour:
   inventory:
     slots: []
   uiManager: {fileID: 1585373445}
+  bakingManager: {fileID: 0}
 --- !u!4 &2129759739
 Transform:
   m_ObjectHideFlags: 0

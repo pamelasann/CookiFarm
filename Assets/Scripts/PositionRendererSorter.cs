@@ -10,7 +10,6 @@ public class PositionRendererSorter : MonoBehaviour
     private int offset = 0;
     [SerializeField]
     private bool runOnlyOnce = false;
-
     private float timer;
     private float timerMax = .1f;
     private Renderer myRenderer;
@@ -18,7 +17,6 @@ public class PositionRendererSorter : MonoBehaviour
     private void Awake(){
         myRenderer = gameObject.GetComponent<Renderer>();
     }
-
     private void LateUpdate(){
         timer -= Time.deltaTime;
         if(timer <= 0f){
@@ -28,7 +26,5 @@ public class PositionRendererSorter : MonoBehaviour
                 Destroy(this);
             }
         }
-    }
-
-    
+    }  
 }
