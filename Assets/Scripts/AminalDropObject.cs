@@ -14,11 +14,16 @@ public class AminalDropObject : MonoBehaviour
 
     public Collectable collectableInstance;
 
+    Transform animalParent;
+    SpriteRenderer parentRenderer;
+
 
     void Start()
     {
         animalObj = transform.GetChild(0).GetComponent<SpriteRenderer>();
         animalCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        animalParent = animalObj.transform.parent;
+        parentRenderer = animalParent.GetComponent<SpriteRenderer>();
     }
     void Update() // Update is called once per frame
     {
@@ -51,6 +56,7 @@ public class AminalDropObject : MonoBehaviour
     {
         isPlanted = false;
         animalObj.gameObject.SetActive(false);
+        SetParentVisibility(true);
         SingletonManager.Instance.inventory.Add(collectableInstance);
     }
     void Plant()
@@ -60,11 +66,22 @@ public class AminalDropObject : MonoBehaviour
         UpdatePlant();
         timer = selectedAnimal.timeBTWStages;
         animalObj.gameObject.SetActive(true);
+        SetParentVisibility(false);
     }
     void UpdatePlant()
     {
         animalObj.sprite = selectedAnimal.animalStages[animalStage];
         animalCollider.size = animalObj.sprite.bounds.size;
         animalCollider.offset = new Vector2(0, animalObj.sprite.bounds.size.y / 2);
+    }
+
+    void SetParentVisibility(bool visible)
+    {
+        if (parentRenderer != null)
+        {
+            Color color = parentRenderer.color;
+            color.a = visible ? 1f : 0f;
+            parentRenderer.color = color;
+        }
     }
 }
