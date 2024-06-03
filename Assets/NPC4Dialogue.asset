@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeca9fcb8691b554c891617f6970e2dd, type: 3}
+  m_Name: NPC4Dialogue
+  m_EditorClassIdentifier: 
+  dialogueMessages:
+  - To bake items, click on the table on the other side of the room to open the baking
+    panel!
+  - If you have enough items to bake the item you want,  you will get a message saying
+    so.
+  - 'Then you will have the option to wait or pick up. '
+  - Time it right to pick up the item before it gets burnt and see it in your inventory
+    [i]!
+  - To see the recipes you can bake click on the key [B]
